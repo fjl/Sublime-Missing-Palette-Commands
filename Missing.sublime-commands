@@ -11,7 +11,12 @@
 
     // Find Menu
     { "caption": "Find", "command": "show_panel", "args": {"panel": "find"} },
+    { "caption": "Find in Files", "command": "show_panel", "args": {"panel": "find_in_files"} },
     { "caption": "Replace", "command": "show_panel", "args": {"panel": "replace"} },
+    { "caption": "Show Find Results Panel", "command": "show_panel", "args": {"panel": "output.find_results"} },
+
+    { "caption": "Next Result", "command": "next_result" },
+    { "caption": "Previous Result", "command": "previous_result" },
 
     // View Menu
     { "caption": "View: Toggle Fullscreen", "command": "toggle_full_screen" },
@@ -36,10 +41,7 @@
     // Tools Menu
     { "caption": "Build", "command": "build" },
     { "caption": "Cancel Build", "command": "exec", "args": {"kill": true} },
-
-    { "caption": "Build Results: Show Results Panel", "command": "show_panel", "args": {"panel": "output.exec"} },
-    { "caption": "Build Results: Next Result", "command": "next_result" },
-    { "caption": "Build Results: Previous Result", "command": "previous_result" },
+    { "caption": "Show Build Results Panel", "command": "show_panel", "args": {"panel": "output.exec"} },
 
     // Project Menu
     { "caption": "Switch Project in Window", "command": "prompt_select_project" },
