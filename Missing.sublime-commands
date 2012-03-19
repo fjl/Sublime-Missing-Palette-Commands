@@ -43,7 +43,6 @@
 
     // Project Menu
     { "caption": "Switch Project in Window", "command": "prompt_select_project" },
-    { "caption": "Project: Close Project", "command": "close_project" },
     { "caption": "Project: Edit Project", "command": "open_file", "args": {"file": "${project}"} },
     { "caption": "Project: Remove all Folders", "command": "close_folder_list" },
     { "caption": "Project: Refresh Folders", "command": "refresh_folder_list" },
