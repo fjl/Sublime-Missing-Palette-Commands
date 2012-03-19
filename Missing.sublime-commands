@@ -38,6 +38,10 @@
     { "caption": "Line Endings: Unix", "command": "set_line_ending", "args": {"type": "unix"} },
     { "caption": "Line Endings: Mac OS 9", "command": "set_line_ending", "args": {"type": "cr"} },
 
+    { "caption": "View: Toggle Spell Check", "command": "toggle_setting", "args": {"setting": "spell_check"} },
+    { "caption": "Spell Check: Next Misspelling", "command": "next_misspelling" },
+    { "caption": "Spell Check: Previous Misspelling", "command": "previous_misspelling" },
+
     // Tools Menu
     { "caption": "Build", "command": "build" },
     { "caption": "Cancel Build", "command": "exec", "args": {"kill": true} },
