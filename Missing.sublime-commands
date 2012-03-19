@@ -1,0 +1,56 @@
+[
+    // File Menu
+    { "caption": "Exit Sublime Text 2", "command": "exit" },
+    { "caption": "New Window", "command": "new_window"},
+    { "caption": "Close Window", "command": "close_window" },
+    { "caption": "File: Save As", "command": "prompt_save_as" },
+    { "caption": "File: Close", "command": "close" },
+
+    // Edit Menu
+    { "caption": "Code Folding: Fold All", "command": "fold_by_level", "args": {"level": 1} },
+
+    // Find Menu
+    { "caption": "Find", "command": "show_panel", "args": {"panel": "find"} },
+    { "caption": "Replace", "command": "show_panel", "args": {"panel": "replace"} },
+
+    // View Menu
+    { "caption": "View: Toggle Fullscreen", "command": "toggle_full_screen" },
+    { "caption": "View: Toggle Distraction Free mode", "command": "toggle_distraction_free" },
+    { "caption": "View: Toggle Console", "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
+    { "caption": "Indentation: Indent Using Spaces", "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"} },
+    { "caption": "Indentation: Tab Width: 1", "command": "set_setting", "args": {"setting": "tab_size", "value": 1} },
+    { "caption": "Indentation: Tab Width: 2", "command": "set_setting", "args": {"setting": "tab_size", "value": 2} },
+    { "caption": "Indentation: Tab Width: 3", "command": "set_setting", "args": {"setting": "tab_size", "value": 3} },
+    { "caption": "Indentation: Tab Width: 4", "command": "set_setting", "args": {"setting": "tab_size", "value": 4} },
+    { "caption": "Indentation: Tab Width: 5", "command": "set_setting", "args": {"setting": "tab_size", "value": 5} },
+    { "caption": "Indentation: Tab Width: 6", "command": "set_setting", "args": {"setting": "tab_size", "value": 6} },
+    { "caption": "Indentation: Tab Width: 7", "command": "set_setting", "args": {"setting": "tab_size", "value": 7} },
+    { "caption": "Indentation: Tab Width: 8", "command": "set_setting", "args": {"setting": "tab_size", "value": 8} },
+    { "caption": "Indentation: Guess Settings From Buffer", "command": "detect_indentation" },
+
+    { "caption": "Line Endings: Windows", "command": "set_line_ending", "args": {"type": "windows"} },
+    { "caption": "Line Endings: Unix", "command": "set_line_ending", "args": {"type": "unix"} },
+    { "caption": "Line Endings: Mac OS 9", "command": "set_line_ending", "args": {"type": "cr"} },
+
+    // Tools Menu
+    { "caption": "Build", "command": "build" },
+    { "caption": "Cancel Build", "command": "exec", "args": {"kill": true} },
+
+    { "caption": "Build Results: Show Results Panel", "command": "show_panel", "args": {"panel": "output.exec"} },
+    { "caption": "Build Results: Next Result", "command": "next_result" },
+    { "caption": "Build Results: Previous Result", "command": "previous_result" },
+
+    // Project Menu
+    { "caption": "Switch Project in Window", "command": "prompt_select_project" },
+    { "caption": "Project: Close Project", "command": "close_project" },
+    { "caption": "Project: Edit Project", "command": "open_file", "args": {"file": "${project}"} },
+    { "caption": "Project: Remove all Folders", "command": "close_folder_list" },
+    { "caption": "Project: Refresh Folders", "command": "refresh_folder_list" },
+
+    // Preferences Menu
+    { "caption": "Settings: Syntax Specific – User", "command": "open_file_settings" },
+    { "caption": "Font: Increase Font Size", "command": "increase_font_size" },
+    { "caption": "Font: Decrease Font Size", "command": "decrease_font_size" },
+    { "caption": "Font: Reset Font Size", "command": "reset_font_size" }
+]
