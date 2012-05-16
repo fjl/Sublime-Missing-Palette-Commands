@@ -42,6 +42,20 @@
     { "caption": "Spell Check: Next Misspelling", "command": "next_misspelling" },
     { "caption": "Spell Check: Previous Misspelling", "command": "previous_misspelling" },
 
+    { "caption": "Ruler: None", "command": "set_setting", "args": {"setting": "rulers", "value": []}},
+    { "caption": "Ruler: Column 70", "command": "set_setting", "args": {"setting": "rulers", "value": [70]}},
+    { "caption": "Ruler: Column 78", "command": "set_setting", "args": {"setting": "rulers", "value": [78]}},
+    { "caption": "Ruler: Column 80", "command": "set_setting", "args": {"setting": "rulers", "value": [80]}},
+    { "caption": "Ruler: Column 100", "command": "set_setting", "args": {"setting": "rulers", "value": [100]}},
+    { "caption": "Ruler: Column 120", "command": "set_setting", "args": {"setting": "rulers", "value": [120]}},
+
+    { "caption": "Word Wrap: Automatic Column", "command": "set_setting", "args": {"setting": "wrap_width", "value": 0}},
+    { "caption": "Word Wrap: Column 70", "command": "set_setting", "args": {"setting": "wrap_width", "value": 70}},
+    { "caption": "Word Wrap: Column 78", "command": "set_setting", "args": {"setting": "wrap_width", "value": 78}},
+    { "caption": "Word Wrap: Column 80", "command": "set_setting", "args": {"setting": "wrap_width", "value": 80}},
+    { "caption": "Word Wrap: Column 100", "command": "set_setting", "args": {"setting": "wrap_width", "value": 100}},
+    { "caption": "Word Wrap: Column 120", "command": "set_setting", "args": {"setting": "wrap_width", "value": 120}},
+
     // Tools Menu
     { "caption": "Build", "command": "build" },
     { "caption": "Cancel Build", "command": "exec", "args": {"kill": true} },
