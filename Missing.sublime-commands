@@ -5,6 +5,7 @@
     { "caption": "Close Window", "command": "close_window" },
     { "caption": "File: Save As", "command": "prompt_save_as" },
     { "caption": "File: Close", "command": "close" },
+    { "caption": "File: Reopen Closed File", "command": "reopen_last_file" },
 
     // Edit Menu
     { "caption": "Code Folding: Fold All", "command": "fold_by_level", "args": {"level": 1} },
