@@ -56,6 +56,35 @@
     { "caption": "Word Wrap: Column 100", "command": "set_setting", "args": {"setting": "wrap_width", "value": 100}},
     { "caption": "Word Wrap: Column 120", "command": "set_setting", "args": {"setting": "wrap_width", "value": 120}},
 
+    { "caption": "Layout: Single",
+      "command": "set_layout",
+      "args": {"cols": [0.0, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1]]}
+    },
+    { "caption": "Layout: Columns: 2",
+      "command": "set_layout",
+      "args": {"cols": [0.0, 0.5, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]}
+    },
+    { "caption": "Layout: Columns: 3",
+      "command": "set_layout",
+      "args": {"cols": [0.0, 0.33, 0.66, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]}
+    },
+    { "caption": "Layout: Columns: 4",
+      "command": "set_layout",
+      "args": {"cols": [0.0, 0.25, 0.5, 0.75, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]]}
+    },
+    { "caption": "Layout: Rows: 2",
+      "command": "set_layout",
+      "args": {"cols": [0.0, 1.0], "rows": [0.0, 0.5, 1.0], "cells": [[0, 0, 1, 1], [0, 1, 1, 2]]}
+    },
+    { "caption": "Layout: Rows: 3",
+      "command": "set_layout",
+      "args": {"cols": [0.0, 1.0], "rows": [0.0, 0.33, 0.66, 1.0], "cells": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]]}
+    },
+    { "caption": "Layout: Grid: 4",
+      "command": "set_layout",
+      "args": {"cols": [0.0, 0.5, 1.0], "rows": [0.0, 0.5, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [0, 1, 1, 2], [1, 1, 2, 2]]}
+    },
+
     // Tools Menu
     { "caption": "Build", "command": "build" },
     { "caption": "Cancel Build", "command": "exec", "args": {"kill": true} },
