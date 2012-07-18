@@ -10,6 +10,16 @@
     // Edit Menu
     { "caption": "Code Folding: Fold All", "command": "fold_by_level", "args": {"level": 1} },
 
+    { "caption": "Permute Lines: Reverse", "command": "permute_lines", "args": {"operation": "reverse"} },
+    { "caption": "Permute Lines: Unique", "command": "permute_lines", "args": {"operation": "unique"} },
+    { "caption": "Permute Lines: Shuffle", "command": "permute_lines", "args": {"operation": "shuffle"} },
+
+    { "caption": "Permute Selections: Sort", "command": "sort_selection", "args": {"case_sensitive": false} },
+    { "caption": "Permute Selections: Sort (Case Sensitive)", "command": "sort_selection", "args": {"case_sensitive": true} },
+    { "caption": "Permute Selections: Reverse", "command": "permute_selection", "args": {"operation": "reverse"} },
+    { "caption": "Permute Selections: Unique", "command": "permute_selection", "args": {"operation": "unique"} },
+    { "caption": "Permute Selections: Shuffle", "command": "permute_selection", "args": {"operation": "shuffle"} },
+
     // Find Menu
     { "caption": "Find", "command": "show_panel", "args": {"panel": "find"} },
     { "caption": "Find in Files", "command": "show_panel", "args": {"panel": "find_in_files"} },
