@@ -33,6 +33,7 @@
     { "caption": "View: Toggle Fullscreen", "command": "toggle_full_screen" },
     { "caption": "View: Toggle Distraction Free mode", "command": "toggle_distraction_free" },
     { "caption": "View: Toggle Console", "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+    { "caption": "View: Toggle Gutter", "command": "toggle_setting", "args": {"setting": "gutter"}},
 
     { "caption": "Indentation: Indent Using Spaces", "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"} },
     { "caption": "Indentation: Tab Width: 1", "command": "set_setting", "args": {"setting": "tab_size", "value": 1} },
