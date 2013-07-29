@@ -115,5 +115,6 @@
 
     // Misc (not in menu)
     { "caption": "View: Toggle Gutter", "command": "toggle_setting", "args": {"setting": "gutter"} },
-    { "caption": "View: Toggle Line Numbers", "command": "toggle_setting", "args": {"setting": "line_numbers"} }
+    { "caption": "View: Toggle Line Numbers", "command": "toggle_setting", "args": {"setting": "line_numbers"} },
+    { "caption": "Check for Updates", "command": "update_check" }
 ]
