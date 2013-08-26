@@ -99,6 +99,7 @@
     // Tools Menu
     { "caption": "Cancel Build", "command": "exec", "args": {"kill": true} },
     { "caption": "Show Build Results Panel", "command": "show_panel", "args": {"panel": "output.exec"} },
+    { "caption": "Tools: New Snippet", "command": "new_snippet" },
 
     // Project Menu
     { "caption": "Switch Project in Window", "command": "prompt_select_project" },
