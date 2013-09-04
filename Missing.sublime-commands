@@ -100,6 +100,7 @@
     // Tools Menu
     { "caption": "Cancel Build", "command": "exec", "args": {"kill": true} },
     { "caption": "Show Build Results Panel", "command": "show_panel", "args": {"panel": "output.exec"} },
+    { "caption": "Tools: New Snippet", "command": "new_snippet" },
 
     // Project Menu
     { "caption": "Switch Project in Window", "command": "prompt_select_project" },
@@ -112,5 +113,11 @@
     { "caption": "Preferences: Syntax Specific – User", "command": "open_file_settings" },
     { "caption": "Font: Increase Font Size", "command": "increase_font_size" },
     { "caption": "Font: Decrease Font Size", "command": "decrease_font_size" },
-    { "caption": "Font: Reset Font Size", "command": "reset_font_size" }
+    { "caption": "Font: Reset Font Size", "command": "reset_font_size" },
+
+    // Misc (not in menu)
+    { "caption": "View: Toggle Gutter", "command": "toggle_setting", "args": {"setting": "gutter"} },
+    { "caption": "View: Toggle Line Numbers", "command": "toggle_setting", "args": {"setting": "line_numbers"} },
+    { "caption": "Check for Updates", "command": "update_check" },
+    { "caption": "Reveal Current File in Side Bar", "command": "reveal_in_side_bar" }
 ]
