@@ -120,7 +120,6 @@
     { "caption": "Check for Updates", "command": "update_check" },
     { "caption": "Reveal Current File in Side Bar", "command": "reveal_in_side_bar" }
 
-    // Multi selections
-    { "caption": "Split Selection", "command": "splitSelection"},
-    { "caption": "Split Selection into Lines", "command": "splitSelectionIntoLines")
+    // Selections
+    { "caption": "Invert Selection", "command": "invert_selection"}
 ]
