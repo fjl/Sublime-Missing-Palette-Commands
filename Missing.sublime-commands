@@ -1,123 +1,201 @@
 [
-    // File Menu
-    { "caption": "Exit Sublime Text 2", "command": "exit" },
-    { "caption": "New Window", "command": "new_window"},
-    { "caption": "Close Window", "command": "close_window" },
-    { "caption": "File: Save As", "command": "prompt_save_as" },
-    { "caption": "File: Close", "command": "close" },
-    { "caption": "File: Reopen Closed File", "command": "reopen_last_file" },
+    // File
+    { "command": "new_file", "caption": "File: New File" },
+    { "command": "reopen_last_file", "caption": "File: Reopen Closed File" },
+    { "command": "save", "caption": "File: Save" },
+    { "command": "close", "caption": "File: Close" },
+    { "command": "new_window", "caption": "New Window" },
+    { "command": "close_window", "caption": "Close Window" },
+    { "command": "exit", "caption": "Exit" },
 
-    // Edit Menu
-    { "caption": "Code Folding: Fold All", "command": "fold_by_level", "args": {"level": 1} },
+    // Selection
+    { "caption": "Selection: Split into Lines", "command": "split_selection_into_lines" },
+    { "caption": "Selection: Add Previous Line", "command": "select_lines", "args": {"forward": "false"}},
+    { "caption": "Selection: Add Next Line", "command": "select_lines", "args": {"forward": "true"}},
+    { "caption": "Selection: Single Selection", "command": "single_selection" },
+    { "caption": "Selection: Invert Selection", "command": "invert_selection" },
+    { "caption": "Selection: Select All", "command": "select_all" },
+    { "caption": "Selection: Expand to Line", "command": "expand_selection", "args": {"to": "line"}},
+    { "caption": "Selection: Expand to Word", "command": "find_under_expand"},
+    { "caption": "Selection: Expand to Paragraph", "command": "expand_selection_to_paragraph"},
+    { "caption": "Selection: Expand to Scope", "command": "expand_selection", "args": {"to": "scope"}},
+    { "caption": "Selection: Expand to Brackets", "command": "expand_selection", "args": {"to": "brackets"}},
+    { "caption": "Selection: Expand to Indentation", "command": "expand_selection", "args": {"to": "indentation"}},
+    { "caption": "Selection: Expand to Tag", "command": "expand_selection", "args": {"to": "tag"}},
+    { "caption": "Selection: Undo Selection", "command": "soft_undo" },
+    { "caption": "Selection: Redo Selection", "command": "soft_redo" },
 
-    { "caption": "Permute Lines: Reverse", "command": "permute_lines", "args": {"operation": "reverse"} },
-    { "caption": "Permute Lines: Unique", "command": "permute_lines", "args": {"operation": "unique"} },
-    { "caption": "Permute Lines: Shuffle", "command": "permute_lines", "args": {"operation": "shuffle"} },
+    // Edit
+    { "caption": "Edit: Undo", "command": "undo" },
+    { "caption": "Edit: Redo or Repeat", "command": "redo_or_repeat" },
+    { "caption": "Edit: Copy", "command": "copy" },
+    { "caption": "Edit: Cut", "command": "cut" },
+    { "caption": "Edit: Paste", "command": "paste" },
+    { "caption": "Edit: Paste and Indent", "command": "paste_and_indent" },
+    { "caption": "Edit: Paste from History", "command": "paste_from_history" },
+    { "caption": "Indentation: Indent", "command": "indent" },
+    { "caption": "Indentation: Unindent", "command": "unindent" },
+    { "caption": "Edit: Swap Line Up", "command": "swap_line_up" },
+    { "caption": "Edit: Swap Line Down", "command": "swap_line_down" },
+    { "caption": "Edit: Duplicate Line", "command": "duplicate_line" },
+    { "caption": "Edit: Delete Line", "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+    { "caption": "Edit: Join Lines", "command": "join_lines" },
+    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Edit: Delete Line" },
+    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}, "caption": "Edit: Delete to End" },
+    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"}, "caption": "Edit: Delete to Beginning" },
+    { "command": "set_mark", "caption": "Mark: Set Mark" },
+    { "command": "select_to_mark", "caption": "Mark: Select to Mark" },
+    { "command": "delete_to_mark", "caption": "Mark: Delete to Mark" },
+    { "command": "swap_with_mark", "caption": "Mark: Swap with Mark" },
+    { "command": "clear_bookmarks", "args": {"name": "mark"}, "caption": "Mark: Clear Mark" },
+    { "command": "yank", "caption": "Mark: Yank" },
+    { "caption": "Code Folding: Fold", "command": "fold" },
+    { "caption": "Code Folding: Unfold", "command": "unfold" },
 
-    { "caption": "Permute Selections: Sort", "command": "sort_selection", "args": {"case_sensitive": false} },
-    { "caption": "Permute Selections: Sort (Case Sensitive)", "command": "sort_selection", "args": {"case_sensitive": true} },
-    { "caption": "Permute Selections: Reverse", "command": "permute_selection", "args": {"operation": "reverse"} },
-    { "caption": "Permute Selections: Unique", "command": "permute_selection", "args": {"operation": "unique"} },
-    { "caption": "Permute Selections: Shuffle", "command": "permute_selection", "args": {"operation": "shuffle"} },
+    // Find
+    { "command": "show_panel", "args": {"panel": "find", "reverse": false}, "caption": "Find…" },
+    { "command": "find_next", "caption": "Find Next" },
+    { "command": "find_prev", "caption": "Find Previous" },
+    { "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false}, "caption": "Incremental Find" },
+    { "command": "show_panel", "args": {"panel": "replace", "reverse": false}, "caption": "Replace…" },
+    { "command": "replace_next", "caption": "Replace Next" },
+    { "command": "find_under", "caption": "Quick Find" },
+    { "command": "find_all_under", "caption": "Quick Find All" },
+    { "command": "find_under_expand", "caption": "Quick Add Next" },
+    { "command": "slurp_find_string", "caption": "Use Selection for Find" },
+    { "command": "slurp_replace_string", "caption": "Use Selection for Replace" },
+    { "command": "show_panel", "args": {"panel": "find_in_files"}, "caption": "Find in Files…" },
 
-    // Find Menu
-    { "caption": "Find", "command": "show_panel", "args": {"panel": "find"} },
-    { "caption": "Find in Files", "command": "show_panel", "args": {"panel": "find_in_files"} },
-    { "caption": "Replace", "command": "show_panel", "args": {"panel": "replace"} },
-    { "caption": "Show Find Results Panel", "command": "show_panel", "args": {"panel": "output.find_results"} },
-
-    { "caption": "Next Result", "command": "next_result" },
-    { "caption": "Previous Result", "command": "previous_result" },
-
-    // View Menu
-    { "caption": "View: Toggle Fullscreen", "command": "toggle_full_screen" },
-    { "caption": "View: Toggle Distraction Free mode", "command": "toggle_distraction_free" },
-    { "caption": "View: Toggle Console", "command": "show_panel", "args": {"panel": "console", "toggle": true} },
-    { "caption": "View: Toggle Gutter", "command": "toggle_setting", "args": {"setting": "gutter"}},
-
-    { "caption": "Indentation: Indent Using Spaces", "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"} },
-    { "caption": "Indentation: Tab Width: 1", "command": "set_setting", "args": {"setting": "tab_size", "value": 1} },
-    { "caption": "Indentation: Tab Width: 2", "command": "set_setting", "args": {"setting": "tab_size", "value": 2} },
-    { "caption": "Indentation: Tab Width: 3", "command": "set_setting", "args": {"setting": "tab_size", "value": 3} },
-    { "caption": "Indentation: Tab Width: 4", "command": "set_setting", "args": {"setting": "tab_size", "value": 4} },
-    { "caption": "Indentation: Tab Width: 5", "command": "set_setting", "args": {"setting": "tab_size", "value": 5} },
-    { "caption": "Indentation: Tab Width: 6", "command": "set_setting", "args": {"setting": "tab_size", "value": 6} },
-    { "caption": "Indentation: Tab Width: 7", "command": "set_setting", "args": {"setting": "tab_size", "value": 7} },
-    { "caption": "Indentation: Tab Width: 8", "command": "set_setting", "args": {"setting": "tab_size", "value": 8} },
-    { "caption": "Indentation: Guess Settings From Buffer", "command": "detect_indentation" },
-
-    { "caption": "Line Endings: Windows", "command": "set_line_ending", "args": {"type": "windows"} },
-    { "caption": "Line Endings: Unix", "command": "set_line_ending", "args": {"type": "unix"} },
-    { "caption": "Line Endings: Mac OS 9", "command": "set_line_ending", "args": {"type": "cr"} },
-
-    { "caption": "View: Toggle Spell Check", "command": "toggle_setting", "args": {"setting": "spell_check"} },
-    { "caption": "Spell Check: Next Misspelling", "command": "next_misspelling" },
-    { "caption": "Spell Check: Previous Misspelling", "command": "previous_misspelling" },
-
-    { "caption": "Ruler: None", "command": "set_setting", "args": {"setting": "rulers", "value": []}},
-    { "caption": "Ruler: Column 70", "command": "set_setting", "args": {"setting": "rulers", "value": [70]}},
-    { "caption": "Ruler: Column 78", "command": "set_setting", "args": {"setting": "rulers", "value": [78]}},
-    { "caption": "Ruler: Column 80", "command": "set_setting", "args": {"setting": "rulers", "value": [80]}},
-    { "caption": "Ruler: Column 100", "command": "set_setting", "args": {"setting": "rulers", "value": [100]}},
-    { "caption": "Ruler: Column 120", "command": "set_setting", "args": {"setting": "rulers", "value": [120]}},
-
-    { "caption": "Word Wrap: Automatic Column", "command": "set_setting", "args": {"setting": "wrap_width", "value": 0}},
-    { "caption": "Word Wrap: Column 70", "command": "set_setting", "args": {"setting": "wrap_width", "value": 70}},
-    { "caption": "Word Wrap: Column 78", "command": "set_setting", "args": {"setting": "wrap_width", "value": 78}},
-    { "caption": "Word Wrap: Column 80", "command": "set_setting", "args": {"setting": "wrap_width", "value": 80}},
-    { "caption": "Word Wrap: Column 100", "command": "set_setting", "args": {"setting": "wrap_width", "value": 100}},
-    { "caption": "Word Wrap: Column 120", "command": "set_setting", "args": {"setting": "wrap_width", "value": 120}},
-
-    { "caption": "Layout: Single",
-      "command": "set_layout",
-      "args": {"cols": [0.0, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1]]}
+    // View
+    { "command": "toggle_menu", "caption": "View: Toggle Menu" },
+    { "command": "toggle_full_screen", "caption": "Full Screen"},
+    { "command": "toggle_distraction_free", "caption": "Distraction Free Mode" },
+    {
+        "caption": "Layout: Single",
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1]]
+        }
     },
-    { "caption": "Layout: Columns: 2",
-      "command": "set_layout",
-      "args": {"cols": [0.0, 0.5, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]}
+    {
+        "caption": "Layout: 2 Columns",
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.5, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+        }
     },
-    { "caption": "Layout: Columns: 3",
-      "command": "set_layout",
-      "args": {"cols": [0.0, 0.33, 0.66, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]}
+    {
+        "caption": "Layout: 3 Columns",
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.33, 0.66, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]
+        }
     },
-    { "caption": "Layout: Columns: 4",
-      "command": "set_layout",
-      "args": {"cols": [0.0, 0.25, 0.5, 0.75, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]]}
+    {
+        "caption": "Layout: 4 Columns",
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.25, 0.5, 0.75, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]]
+        }
     },
-    { "caption": "Layout: Rows: 2",
-      "command": "set_layout",
-      "args": {"cols": [0.0, 1.0], "rows": [0.0, 0.5, 1.0], "cells": [[0, 0, 1, 1], [0, 1, 1, 2]]}
+    {
+        "caption": "Layout: 2 Rows",
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 1.0],
+            "rows": [0.0, 0.5, 1.0],
+            "cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
+        }
     },
-    { "caption": "Layout: Rows: 3",
-      "command": "set_layout",
-      "args": {"cols": [0.0, 1.0], "rows": [0.0, 0.33, 0.66, 1.0], "cells": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]]}
+    {
+        "caption": "Layout: 3 Rows",
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 1.0],
+            "rows": [0.0, 0.33, 0.66, 1.0],
+            "cells": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]]
+        }
     },
-    { "caption": "Layout: Grid: 4",
-      "command": "set_layout",
-      "args": {"cols": [0.0, 0.5, 1.0], "rows": [0.0, 0.5, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [0, 1, 1, 2], [1, 1, 2, 2]]}
+    {
+        "caption": "Layout: Grid",
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.5, 1.0],
+            "rows": [0.0, 0.5, 1.0],
+            "cells":
+            [
+                [0, 0, 1, 1], [1, 0, 2, 1],
+                [0, 1, 1, 2], [1, 1, 2, 2]
+            ]
+        }
     },
+    { "command": "new_pane", "caption": "Group: Move to New Group" },
+    { "command": "new_pane", "args": {"move": false}, "caption": "Group: New Group" },
+    { "command": "close_pane", "caption": "Group: Close Group" },
+    { "command": "focus_neighboring_group", "caption": "Group: Focus Next Group" },
+    { "command": "focus_neighboring_group", "args": {"forward": false}, "caption": "Group: Focus Previous Group" },
+    { "command": "focus_group", "args": {"group": 0}, "caption": "Group: Focus Group 1" },
+    { "command": "focus_group", "args": {"group": 1}, "caption": "Group: Focus Group 2" },
+    { "command": "focus_group", "args": {"group": 2}, "caption": "Group: Focus Group 3" },
+    { "command": "focus_group", "args": {"group": 3}, "caption": "Group: Focus Group 4" },
+    { "command": "move_to_neighboring_group", "caption": "Group: Move to Next Group" },
+    { "command": "move_to_neighboring_group", "args": {"forward": false}, "caption": "Group: Move to Previous Group" },
+    { "command": "move_to_group", "args": {"group": 0}, "caption": "Group: Move to Group 1" },
+    { "command": "move_to_group", "args": {"group": 1}, "caption": "Group: Move to Group 2" },
+    { "command": "move_to_group", "args": {"group": 2}, "caption": "Group: Move to Group 3" },
+    { "command": "move_to_group", "args": {"group": 3}, "caption": "Group: Move to Group 4" },
+    { "command": "detect_indentation", "caption": "Indentation: Guess Settings From Buffer" },
+    { "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "Indentation: Use Spaces" },
+    { "command": "set_line_ending", "args": {"type": "windows"}, "caption": "Line Endings: Windows" },
+    { "command": "set_line_ending", "args": {"type": "unix"}, "caption": "Line Endings: Unix" },
+    { "command": "set_line_ending", "args": {"type": "cr"}, "caption": "Line Endings: Mac OS 9" },
+    { "command": "toggle_setting", "args": {"setting": "spell_check"}, "caption": "Spelling: Spell Check" },
+    { "command": "next_misspelling", "caption": "Spelling: Next Misspelling" },
+    { "command": "prev_misspelling", "caption": "Spelling: Previous Misspelling" },
 
-    // Tools Menu
-    { "caption": "Cancel Build", "command": "exec", "args": {"kill": true} },
-    { "caption": "Show Build Results Panel", "command": "show_panel", "args": {"panel": "output.exec"} },
-    { "caption": "Tools: New Snippet", "command": "new_snippet" },
+    // Goto
+    { "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "Goto: Anything…" },
+    { "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "Goto: Symbol…" },
+    { "command": "goto_symbol_in_project", "caption": "Goto: Symbol in Project…" },
+    { "command": "goto_definition", "caption": "Goto: Definition…" },
+    { "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "Goto: Line…" },
+    { "command": "jump_back", "caption": "Jump Back" },
+    { "command": "jump_forward", "caption": "Jump Forward" },
+    { "command": "next_view", "caption": "Switch: Next File" },
+    { "command": "prev_view", "caption": "Switch: Previous File" },
+    { "command": "next_view_in_stack", "caption": "Switch: Next File in Stack" },
+    { "command": "prev_view_in_stack", "caption": "Switch: Previous File in Stack" },
+    { "command": "show_at_center", "caption": "Scroll to Selection" },
+    { "command": "move_to", "args": {"to": "brackets"}, "caption": "Jump to Matching Bracket" },
 
-    // Project Menu
-    { "caption": "Switch Project in Window", "command": "prompt_select_project" },
-    { "caption": "Project: Open Project", "command": "prompt_open_project" },
-    { "caption": "Project: Edit Project", "command": "open_file", "args": {"file": "${project}"} },
-    { "caption": "Project: Remove all Folders", "command": "close_folder_list" },
-    { "caption": "Project: Refresh Folders", "command": "refresh_folder_list" },
+    // Tools
+    { "command": "build", "args": {"variant": "Run"}, "caption": "Build: Run Build" },
+    { "command": "show_panel", "args": {"panel": "output.exec"}, "caption": "Build: Show Results", "mnemonic": "S" },
+    { "command": "toggle_record_macro", "caption": "Macro: Record Macro" },
+    { "command": "run_macro", "caption": "Macro: Playback Macro" },
+    { "command": "save_macro", "caption": "Macro: Save Macro…" },
 
-    // Preferences Menu
-    { "caption": "Preferences: Syntax Specific – User", "command": "open_file_settings" },
-    { "caption": "Font: Increase Font Size", "command": "increase_font_size" },
-    { "caption": "Font: Decrease Font Size", "command": "decrease_font_size" },
-    { "caption": "Font: Reset Font Size", "command": "reset_font_size" },
-
-    // Misc (not in menu)
-    { "caption": "View: Toggle Gutter", "command": "toggle_setting", "args": {"setting": "gutter"} },
-    { "caption": "View: Toggle Line Numbers", "command": "toggle_setting", "args": {"setting": "line_numbers"} },
-    { "caption": "Check for Updates", "command": "update_check" },
-    { "caption": "Reveal Current File in Side Bar", "command": "reveal_in_side_bar" }
+    // Project
+    { "command": "prompt_open_project_or_workspace", "caption": "Project: Open Project…" },
+    { "command": "prompt_switch_project_or_workspace", "caption": "Project: Switch Project…" },
+    { "command": "prompt_select_workspace", "caption": "Project: Quick Switch Project…"},
+    { "command": "close_workspace", "caption": "Project: Close Project" },
+    { "command": "open_file", "args": {"file": "${project}"}, "caption": "Project: Edit Project" },
+    { "command": "new_window_for_project", "caption": "Project: New Workspace for Project" },
+    { "command": "close_folder_list", "caption": "Project: Remove all Folders from Project" }
 ]
