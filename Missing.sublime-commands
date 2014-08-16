@@ -6,7 +6,7 @@
     { "command": "close", "caption": "File: Close" },
     { "command": "new_window", "caption": "New Window" },
     { "command": "close_window", "caption": "Close Window" },
-    { "command": "exit", "caption": "Exit" },
+    { "command": "exit", "caption": "Exit Sublime Text" },
 
     // Selection
     { "caption": "Selection: Split into Lines", "command": "split_selection_into_lines" },
@@ -69,8 +69,8 @@
     // View
     { "command": "toggle_menu", "caption": "View: Toggle Menu" },
     { "command": "show_panel", "args": {"panel": "console"}, "caption": "View: Show Console" },
-    { "command": "toggle_full_screen", "caption": "Full Screen"},
-    { "command": "toggle_distraction_free", "caption": "Distraction Free Mode" },
+    { "command": "toggle_full_screen", "caption": "View: Toggle Full Screen"},
+    { "command": "toggle_distraction_free", "caption": "View: Toggle Distraction Free Mode" },
     {
         "caption": "Layout: Single",
         "command": "set_layout",
