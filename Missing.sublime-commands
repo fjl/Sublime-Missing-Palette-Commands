@@ -68,6 +68,7 @@
 
     // View
     { "command": "toggle_menu", "caption": "View: Toggle Menu" },
+    { "command": "show_panel", "args": {"panel": "console"}, "caption": "View: Show Console" },
     { "command": "toggle_full_screen", "caption": "Full Screen"},
     { "command": "toggle_distraction_free", "caption": "Distraction Free Mode" },
     {
@@ -197,5 +198,11 @@
     { "command": "close_workspace", "caption": "Project: Close Project" },
     { "command": "open_file", "args": {"file": "${project}"}, "caption": "Project: Edit Project" },
     { "command": "new_window_for_project", "caption": "Project: New Workspace for Project" },
-    { "command": "close_folder_list", "caption": "Project: Remove all Folders from Project" }
+    { "command": "close_folder_list", "caption": "Project: Remove all Folders from Project" },
+
+    // Misc (not in menu)
+    { "caption": "View: Toggle Gutter", "command": "toggle_setting", "args": {"setting": "gutter"} },
+    { "caption": "View: Toggle Line Numbers", "command": "toggle_setting", "args": {"setting": "line_numbers"} },
+    { "caption": "Check for Updates", "command": "update_check" },
+    { "caption": "Reveal Current File in Side Bar", "command": "reveal_in_side_bar" }
 ]
