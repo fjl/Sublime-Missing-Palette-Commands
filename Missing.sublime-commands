@@ -190,6 +190,7 @@
     { "command": "toggle_record_macro", "caption": "Macro: Record Macro" },
     { "command": "run_macro", "caption": "Macro: Playback Macro" },
     { "command": "save_macro", "caption": "Macro: Save Macro…" },
+    { "command": "new_snippet", "caption": "New Snippet…" },
 
     // Project
     { "command": "prompt_open_project_or_workspace", "caption": "Project: Open Project…" },
