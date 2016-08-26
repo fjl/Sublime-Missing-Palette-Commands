@@ -67,7 +67,6 @@
     { "command": "show_panel", "args": {"panel": "find_in_files"}, "caption": "Find in Files…" },
 
     // View
-    { "command": "toggle_menu", "caption": "View: Toggle Menu" },
     { "command": "show_panel", "args": {"panel": "console"}, "caption": "View: Show Console" },
     { "command": "toggle_full_screen", "caption": "View: Toggle Full Screen"},
     { "command": "toggle_distraction_free", "caption": "View: Toggle Distraction Free Mode" },
