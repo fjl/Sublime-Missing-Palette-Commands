@@ -50,6 +50,7 @@
     { "command": "clear_bookmarks", "args": {"name": "mark"}, "caption": "Mark: Clear Mark" },
     { "command": "yank", "caption": "Mark: Yank" },
     { "caption": "Code Folding: Fold", "command": "fold" },
+    { "caption": "Code Folding: Fold All", "command": "fold_all" },
     { "caption": "Code Folding: Unfold", "command": "unfold" },
 
     // Find
