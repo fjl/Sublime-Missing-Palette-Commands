@@ -3,6 +3,7 @@
     { "command": "new_file", "caption": "File: New File" },
     { "command": "reopen_last_file", "caption": "File: Reopen Closed File" },
     { "command": "save", "caption": "File: Save" },
+    { "command": "prompt_save_as", "caption": "File: Save As…" },
     { "command": "close", "caption": "File: Close" },
     { "command": "new_window", "caption": "New Window" },
     { "command": "close_window", "caption": "Close Window" },
