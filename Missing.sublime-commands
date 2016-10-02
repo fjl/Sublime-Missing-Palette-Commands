@@ -1,6 +1,7 @@
 [
     // File
     { "command": "new_file", "caption": "File: New File" },
+    { "command": "prompt_open_file", "caption": "File: Open File" },
     { "command": "reopen_last_file", "caption": "File: Reopen Closed File" },
     { "command": "save", "caption": "File: Save" },
     { "command": "close", "caption": "File: Close" },
